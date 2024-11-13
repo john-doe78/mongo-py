@@ -11,6 +11,19 @@ docker pull mongo
 docker run -d --name mongodb-container -p 27017:27017 mongo
 ```
 
+### Stop the container
+
+```shell
+docker stop mongodb-container
+```
+
+### Delete the container and image
+
+```shell
+docker rm mongodb-container
+docker rmi mongo
+```
+
 ## Access the MongoDB Shell
 
 ### Open a bash shell inside the running MongoDB container
